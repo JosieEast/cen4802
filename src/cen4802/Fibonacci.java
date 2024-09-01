@@ -1,7 +1,16 @@
 package cen4802;
-
+/**
+ * The Fibonacci class provides a method to calculate the nth term
+ * in the Fibonacci sequence using recursion.
+ */
 public class Fibonacci {
-	 // Recursive method to calculate nth Fibonacci number
+
+    /**
+     * Returns the nth term in the Fibonacci sequence.
+     *
+     * @param n the position in the Fibonacci sequence
+     * @return the nth term in the Fibonacci sequence
+     */
     public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
@@ -9,7 +18,6 @@ public class Fibonacci {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 
-    // Main method to test the Fibonacci method
     public static void main(String[] args) {
         int n = 10;
         int result = fibonacci(n);
